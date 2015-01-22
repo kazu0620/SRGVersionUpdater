@@ -14,6 +14,11 @@
     NSDictionary *versionInfo;
 }
 
+#ifndef SRGVersionUpdaterLocalizedStrings
+#define SRGVersionUpdaterLocalizedStrings(key) \
+NSLocalizedStringFromTableInBundle(key, @"SRGVersionUpdater", [NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"SRGVersionUpdater.bundle"]], nil)
+#endif
+
 - (void) executeVersionCheck {
    NSAssert(_endPointUrl, @"Set EndPointUrl Before Execute Check");
     
@@ -43,29 +48,46 @@
 }
 
 - (void) showUpdateAnnounce {
-    UIAlertView *alert = [UIAlertView  bk_alertViewWithTitle:
-        NSLocalizedString(@"SRGVersionUpdater.alert.title", nil)
-        message:NSLocalizedString(@"SRGVersionUpdater.alert.body", nil)
+    UIAlertView *alert = [UIAlertView
+        bk_alertViewWithTitle:[self alertTitle]
+        message:[self alertBody]
     ];
     
-    [alert bk_addButtonWithTitle:
-        NSLocalizedString(@"SRGVersionUpdater.alert.updateButton", nil)
+    [alert bk_addButtonWithTitle:[self updateButtonText]
                          handler:^(void) {
         NSURL *updateUrl = [NSURL URLWithString:versionInfo[@"update_url"]];
         [[UIApplication sharedApplication] openURL:updateUrl];
     }];
     
     if([versionInfo[@"type"] isEqualToString:@"once"]){
-        [alert addButtonWithTitle:
-            NSLocalizedString(@"SRGVersionUpdater.alert.calcelButton",nil)
-        ];
+        [alert addButtonWithTitle: [self cancelButtonText]];
     }
     
     [alert show];
 }
 
-- (NSInteger)_versionNumberFromString:(NSString *)versionString{
+- (NSString *) alertTitle {
+    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.title"];
+}
+
+- (NSString *) alertBody {
+    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.body"];
+}
+
+- (NSString *) updateButtonText {
+    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.updateButton"];
+}
+
+- (NSString *) cancelButtonText {
+    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.calcelButton"];
+}
+
+- (NSInteger) versionNumberFromString:(NSString *)versionString{
     return [[versionString stringByReplacingOccurrencesOfString:@"." withString:@""] intValue];
+}
+
+- (NSString *) localizedStringWithFormat:(NSString *)format {
+    return SRGVersionUpdaterLocalizedStrings(format);
 }
 
 @end
