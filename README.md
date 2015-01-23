@@ -35,7 +35,7 @@ platform :ios, '7.0'
 pod 'SRGVersionUpdater', '~> 0.0.1'
 ```
 
-Next, Open up the AppDelegate.m and edit application:didFinishLaunchingWithOptions: to be like so:
+At last, Open up the AppDelegate.m and edit application:didFinishLaunchingWithOptions: to be like so:
 
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
