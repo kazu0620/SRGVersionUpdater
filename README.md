@@ -1,4 +1,8 @@
 # SRGVersionUpdater
+[![Version](https://img.shields.io/cocoapods/v/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
+[![License](https://img.shields.io/cocoapods/l/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
+[![Platform](https://img.shields.io/cocoapods/p/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
+
 Though you improved wonderfully your app, users doesn't upgrade your app and continue to use old version. That's tragedy. SRGVersionUpdater can solve this problem. SRGVersionUpdater can show alert view about update infomation and force users to launch App Store and download new version app.
 
 The installation is very simple and easy. On client side all you need is only to write a code in 3 lines. And Even if you don't have knowledge in a server side program, you can very easily setup if you have account of Dropbox, Google Drive or other hosting services.
