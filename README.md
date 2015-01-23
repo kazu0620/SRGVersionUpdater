@@ -10,7 +10,8 @@ The installation is very simple and easy. On client side all you need is only to
 
 
 #### 1. Upload a JSON file
-upload a JSON file below. It is OK to upload to public folder of Dropbox, GoogleDrive, or other free hosting services.
+Upload a JSON file below. It is OK to upload to public folder of Dropbox, GoogleDrive, or other free hosting services.
+[Example JSON file](https://github.com/kazu0620/SRGVersionUpdater/raw/master/Example/app_version.json)
 
 ```json
 {"required_version":"2.0.0","type":"force","update_url":"https://itunes.apple.com/jp/app/idxxxxxxxxxx?mt="}
