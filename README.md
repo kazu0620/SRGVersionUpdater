@@ -27,7 +27,7 @@ Upload a JSON file below. It is OK to upload to public folder of Dropbox, Google
 |     type   |    The type of update, "force" or "optional".      |
 |     update_url   |  The App store URL of your app.     |
 
-[How to Host files with GoogleDrice](https://sites.google.com/a/griffith.edu.au/staff-email-learning-centre/help-yourself/google-drive-docs/how-to-share-a-file-with-a-non-google-colleague)
+[How to Host files with GoogleDrive](https://sites.google.com/a/griffith.edu.au/staff-email-learning-centre/help-yourself/google-drive-docs/how-to-share-a-file-with-a-non-google-colleague)
 
 [How to Host files with dropbox](http://www.goarch.org/archdiocese/departments/internet/articles/dropbox/)
 
