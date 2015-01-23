@@ -33,7 +33,7 @@ Upload a JSON file below. It is OK to upload to public folder of Dropbox, Google
 
 
 #### 2. Install  SRGVersionUpdater
-First, Install SRGVersionUpdater to your project with [CocoaPods](http://cocoapods.org) by adding the following to your Podfile:
+Install SRGVersionUpdater to your project with [CocoaPods](http://cocoapods.org) by adding the following to your Podfile:
 
 ``` ruby
 platform :ios, '6.0'
