@@ -47,7 +47,7 @@ Next, Open up the AppDelegate.m and edit application:didFinishLaunchingWithOptio
     return YES;
 }
 ```
-In endPointUrl, input URL of the JSON file uploaded by previous step.
+Input URL of the JSON file uploaded by previous step in endPointUrl, 
 
 ####Notice:
 There are Bandwidth Limits in Dropbox. If your app have huge number of downloads per day, it is better to change account plan, or use other hosting services.
