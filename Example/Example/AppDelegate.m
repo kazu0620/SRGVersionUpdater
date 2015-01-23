@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SRGVersionUpdater.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    SRGVersionUpdater *versionUpdater = [SRGVersionUpdater new];
+    versionUpdater.endPointUrl = @"https://dl.dropboxusercontent.com/u/461628/app_version.json";
+    [versionUpdater executeVersionCheck];
+    
     return YES;
 }
 

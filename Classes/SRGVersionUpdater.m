@@ -23,7 +23,7 @@ NSLocalizedStringFromTableInBundle(key, @"SRGVersionUpdater", [NSBundle bundleWi
    NSAssert(_endPointUrl, @"Set EndPointUrl Before Execute Check");
     
    AFHTTPRequestOperationManager* manager = [AFHTTPRequestOperationManager manager];
-   manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
+   manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"application/json",nil];
    [manager GET:_endPointUrl parameters:nil
        success:^(AFHTTPRequestOperation *operation, id responseObject) {
            versionInfo = responseObject;
@@ -59,7 +59,7 @@ NSLocalizedStringFromTableInBundle(key, @"SRGVersionUpdater", [NSBundle bundleWi
         [[UIApplication sharedApplication] openURL:updateUrl];
     }];
     
-    if([versionInfo[@"type"] isEqualToString:@"once"]){
+    if([versionInfo[@"type"] isEqualToString:@"optional"]){
         [alert addButtonWithTitle: [self cancelButtonText]];
     }
     

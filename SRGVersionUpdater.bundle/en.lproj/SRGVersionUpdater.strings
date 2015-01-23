@@ -1,4 +1,4 @@
 "SRGVersionUpdater.alert.title" = "New version arrived";
-"SRGVersionUpdater.alert.body" = "Plase update your app on AppStore";
-"SRGVersionUpdater.alert.updateButton" = "AppStore";
+"SRGVersionUpdater.alert.body" = "Plaease download latest version from the Apple App Store";
+"SRGVersionUpdater.alert.updateButton" = "Download";
 "SRGVersionUpdater.alert.calcelButton" = "Update After";

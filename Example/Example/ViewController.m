@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "SRGVersionUpdater.h"
 
 @interface ViewController ()
 
@@ -16,14 +15,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [self versionCheck];
     [super viewDidLoad];
-}
-
-- (void) versionCheck {
-    SRGVersionUpdater *versionUpdater = [SRGVersionUpdater new];
-    versionUpdater.endPointUrl = @"https://dl.dropboxusercontent.com/u/461628/app_version.json";
-    [versionUpdater executeVersionCheck];
 }
 
 - (void)didReceiveMemoryWarning {
