@@ -67,11 +67,11 @@ NSLocalizedStringFromTableInBundle(key, @"SRGVersionUpdater", [NSBundle bundleWi
 }
 
 - (NSString *) alertTitle {
-    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.title"];
+    return _customAlertTitle ? _customAlertTitle : [self localizedStringWithFormat:@"SRGVersionUpdater.alert.title"];
 }
 
 - (NSString *) alertBody {
-    return [self localizedStringWithFormat:@"SRGVersionUpdater.alert.body"];
+    return _customAlertBody ? _customAlertBody : [self localizedStringWithFormat:@"SRGVersionUpdater.alert.body"];
 }
 
 - (NSString *) updateButtonText {

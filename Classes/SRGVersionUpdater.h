@@ -11,6 +11,8 @@
 @interface SRGVersionUpdater : NSObject
 
 @property NSString *endPointUrl;
+@property NSString *customAlertTitle;
+@property NSString *customAlertBody;
 
 - (void) executeVersionCheck;
 
