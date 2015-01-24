@@ -1,7 +1,7 @@
 # SRGVersionUpdater
-[![Version](https://img.shields.io/cocoapods/v/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
-[![License](https://img.shields.io/cocoapods/l/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
-[![Platform](https://img.shields.io/cocoapods/p/SRGVersionUpdater.svg?style=flat)](https://github.com/soragoto/SRGVersionUpdater)
+[![Version](https://img.shields.io/cocoapods/v/SRGVersionUpdater.svg?style=flat)](https://github.com/kazu0620/SRGVersionUpdater)
+[![License](https://img.shields.io/cocoapods/l/SRGVersionUpdater.svg?style=flat)](https://github.com/kazu0620/SRGVersionUpdater)
+[![Platform](https://img.shields.io/cocoapods/p/SRGVersionUpdater.svg?style=flat)](https://github.com/kazu0620/SRGVersionUpdater)
 
 Though you improved wonderfully your app, some users doesn't upgrade your app and continue to use old version. That's tragedy. SRGVersionUpdater can solve this problem. SRGVersionUpdater can show alert view about update infomation and force users to launch App Store and download new version app.
 
