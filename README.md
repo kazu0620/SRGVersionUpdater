@@ -55,7 +55,7 @@ At last, Open up the AppDelegate.m and edit application:didFinishLaunchingWithOp
 Input URL of the JSON file uploaded by previous step in endPointUrl.
 
 ####Notice:
-There are Bandwidth Limits in Dropbox. If your app have huge number of downloads per day, it is better to change account plan, or use other hosting services.
+There are Bandwidth Limits in Dropbox. If your app have huge number of access per day, it is better to change account plan, or use other hosting services.
 
 [Dropbox Help Center : Why were my links banned?](https://www.dropbox.com/help/4204)
 
