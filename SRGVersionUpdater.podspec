@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.resources    = 'SRGVersionUpdater.bundle'
   s.requires_arc = true
 
-  s.dependency 'BlocksKit' , '2.2.5'
-  s.dependency 'AFNetworking', '2.3.1'
+  s.dependency 'BlocksKit'
+  s.dependency 'AFNetworking'
 end
