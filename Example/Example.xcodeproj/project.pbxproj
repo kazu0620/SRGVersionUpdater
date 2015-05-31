@@ -17,7 +17,6 @@
 		244D3CFE1A70FA9200CAA3A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244D3CFD1A70FA9200CAA3A9 /* Images.xcassets */; };
 		244D3D011A70FA9200CAA3A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244D3CFF1A70FA9200CAA3A9 /* LaunchScreen.xib */; };
 		244D3D0D1A70FA9300CAA3A9 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D3D0C1A70FA9300CAA3A9 /* ExampleTests.m */; };
-		244D3D1A1A7108E400CAA3A9 /* SRGVersionUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 244D3D191A7108E400CAA3A9 /* SRGVersionUpdater.m */; };
 		246BB1951A711EB800BC2FF1 /* SRGVersionUpdater.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 246BB1941A711EB800BC2FF1 /* SRGVersionUpdater.bundle */; };
 		6EF750B9129EB8A346834DB2 /* libPods-ExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80DD3C3F5B65B60BF6CD701 /* libPods-ExampleTests.a */; };
 		C4BCD8C8950A6F36F3680D4B /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB92667C8534A0161DEDDAE /* libPods-Example.a */; };
@@ -36,7 +35,6 @@
 
 /* Begin PBXFileReference section */
 		09A066D9BD4D1AA7D1627539 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		0C26E9D0CB5F4079CC890E51 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2419BDF31A7134ED00377609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		2419BDF41A7134FD00377609 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		2419BDF51A7134FF00377609 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
@@ -52,8 +50,6 @@
 		244D3D061A70FA9300CAA3A9 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		244D3D0B1A70FA9300CAA3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244D3D0C1A70FA9300CAA3A9 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
-		244D3D181A7108E400CAA3A9 /* SRGVersionUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGVersionUpdater.h; sourceTree = "<group>"; };
-		244D3D191A7108E400CAA3A9 /* SRGVersionUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGVersionUpdater.m; sourceTree = "<group>"; };
 		246BB1911A711D7A00BC2FF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		246BB1921A711D7A00BC2FF1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		246BB1941A711EB800BC2FF1 /* SRGVersionUpdater.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SRGVersionUpdater.bundle; path = ../SRGVersionUpdater.bundle; sourceTree = "<group>"; };
@@ -91,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				246BB1941A711EB800BC2FF1 /* SRGVersionUpdater.bundle */,
-				244D3D171A7108C800CAA3A9 /* Classes */,
 				244D3CEF1A70FA9200CAA3A9 /* Example */,
 				244D3D091A70FA9300CAA3A9 /* ExampleTests */,
 				244D3CEE1A70FA9200CAA3A9 /* Products */,
@@ -151,20 +146,9 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		244D3D171A7108C800CAA3A9 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				244D3D181A7108E400CAA3A9 /* SRGVersionUpdater.h */,
-				244D3D191A7108E400CAA3A9 /* SRGVersionUpdater.m */,
-			);
-			name = Classes;
-			path = ../Classes;
-			sourceTree = "<group>";
-		};
 		4D91AB8DC4CC3FAFA8A04631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C26E9D0CB5F4079CC890E51 /* libPods.a */,
 				6EB92667C8534A0161DEDDAE /* libPods-Example.a */,
 				D80DD3C3F5B65B60BF6CD701 /* libPods-ExampleTests.a */,
 			);
@@ -357,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				244D3CF91A70FA9200CAA3A9 /* ViewController.m in Sources */,
-				244D3D1A1A7108E400CAA3A9 /* SRGVersionUpdater.m in Sources */,
 				244D3CF61A70FA9200CAA3A9 /* AppDelegate.m in Sources */,
 				244D3CF31A70FA9200CAA3A9 /* main.m in Sources */,
 			);
