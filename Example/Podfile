@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'Example', :exclusive => true do
+  pod "SRGVersionUpdater", :path => "../"
+end
+
+target 'ExampleTests', :exclusive => true do
+  pod "SRGVersionUpdater", :path => "../"
+end
