@@ -23,6 +23,7 @@ NSLocalizedStringFromTableInBundle(key, @"SRGVersionUpdater", [NSBundle bundleWi
     NSAssert(_endPointUrl, @"Set EndPointUrl Before Execute Check");
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.session.configuration.URLCache = nil;
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/plain",@"application/json",nil];
     [manager GET:_endPointUrl parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
