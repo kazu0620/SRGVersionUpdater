@@ -10,8 +10,7 @@ The installation is very simple and easy. On client side all you need is only to
 ##Screenshot
 ![](https://dl.dropboxusercontent.com/u/461628/SRGVersionUpdater.png)
 
-##Usage
-
+## Usage
 
 #### 1. Upload a JSON file
 Upload a JSON file below. It is OK to upload to public folder of Dropbox, GoogleDrive, or other free hosting services.
@@ -53,7 +52,7 @@ At last, Open up the AppDelegate.m and edit application:didFinishLaunchingWithOp
 ```
 Input URL of the JSON file uploaded by previous step in endPointUrl.
 
-####Notice:
+#### Notice:
 There are Bandwidth Limits in Dropbox. If your app have huge number of access per day, it is better to change account plan, or use other hosting services.
 
 [Dropbox Help Center : Why were my links banned?](https://www.dropbox.com/help/4204)
