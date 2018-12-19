@@ -7,9 +7,6 @@ Though you improved wonderfully your app, some users doesn't upgrade your app an
 
 The installation is very simple and easy. On client side all you need is only to write a code in 3 lines. And Even if you don't have knowledge in a server side programming, you can very easily setup if you have account of Dropbox, Google Drive or other hosting services.
 
-##Screenshot
-![](https://dl.dropboxusercontent.com/u/461628/SRGVersionUpdater.png)
-
 ## Usage
 
 #### 1. Upload a JSON file
